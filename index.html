@@ -1,0 +1,375 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="C:\YJSProjects\OpenLabGuide\assets\css\main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>OpenLab Developer Guide</strong> by 유준성</a>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content" id="content">
+										<header>
+											<h1>OpenLab 프로젝트 개발자 가이드</h1>
+										</header>
+										<p>본 문서는 OpenLab 프로젝트의 개발자 문서입니다.</p>
+									</div>
+								</section>
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Table of Contents</h2>
+									</header>
+									<ul>
+										<li>
+											<span class="opener">개요 및 목표</span>
+											<ul>
+												<li><a onClick="test('1_1')">개요</a></li>
+												<!-- <li><a href="C:\YJSProjects\OpenLabGuide\개요 및 목표\개요.html">개요</a></li> -->
+												<li><a onClick="test('1_2')">목표</a></li>
+												<li><a onClick="test('1_3')">정의</a></li>
+												<li><a onClick="test('1_4')">가이드를 시작하기 전</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">공통 설정</span>
+											<ul>
+												<li>
+													<span class="opener">수행형 / 관찰형 공통</span>
+													<ul>
+														<li><a onClick="test('2_1_1')">새 에피소드 프로젝트 생성</a></li>
+														<li><a onClick="test('2_1_2')">초기 프로젝트의 구성</a></li>
+														<li><a onClick="test('2_1_3')">실험의 순서 및 단계 관리</a></li>
+														<li><a onClick="test('2_1_4')">Import 되어 있는 패키지 리스트</a></li>
+														<li><a onClick="test('2_1_5')">UI 디자인</a></li>
+														<li><a onClick="test('2_1_6')">모든 조작 가능한 오브젝트의 Layer</a></li>
+														<li><a onClick="test('2_1_7')">네이밍 컨벤션</a></li>
+													</ul>
+												</li>
+												<li>
+													<span class="opener">수행형</span>
+													<ul>
+														<li><a onClick="test('2_2_1')">실험 기구의 배치</a></li>
+														<li><a onClick="test('2_2_2')">실험 기구 3D 모델 에셋</a></li>
+														<li><a onClick="test('2_2_3')">실험 기구의 조작</a></li>
+													</ul>
+												</li>
+												<li>
+													<span class="opener">관찰형</span>
+													<ul>
+														<li><a onClick="test('2_3_1')">유저의 위치</a></li>
+														<li><a onClick="test('2_3_2')">모델의 배치</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">기능 구현</span>
+											<ul>
+												<li>
+													<span class="opener">수행형 / 관찰형 공통</span>
+													<ul>
+														<li><a onClick="test('3_1_1')">Adjust Pivot 패키지</a></li>
+														<li><a onClick="test('3_1_2')">Advanced Dissolve 패키지</a></li>
+														<li><a onClick="test('3_1_3')">DOTween Pro 패키지</a></li>
+														<li><a onClick="test('3_1_4')">Epic Toon FX 패키지</a></li>
+														<li><a onClick="test('3_1_5')">Living Particles 패키지</a></li>
+														<li><a onClick="test('3_1_6')">SCI-FI Pack Pro 패키지</a></li>
+													</ul>
+												</li>
+												<li>
+													<span class="opener">수행형</span>
+													<ul>
+														<li><a onClick="test('3_2_1')">수행형 실험의 기본적인 흐름</a></li>
+														<li><a onClick="test('3_2_2')">실험 기구 외곽선 및 기구명 툴팁 적용</a></li>
+														<li><a onClick="test('3_2_3')">실험 기구 조작 - 클릭</a></li>
+														<li><a onClick="test('3_2_4')">실험 기구 조작 - 드래그 앤 드랍</a></li>
+														<li><a onClick="test('3_2_5')">카메라 줌 인/아웃</a></li>
+														<li><a onClick="test('3_2_6')">카메라 높낮이 조절</a></li>
+														<li><a onClick="test('3_2_7')">실험 기구 유도 이펙트</a></li>
+														<li><a onClick="test('3_2_8')">오브젝트 위치, 회전 각도, 크기 즉시 변경</a></li>
+														<li><a onClick="test('3_2_9')">오브젝트 위치, 회전 각도, 크기 변경 애니메이션</a></li>
+														<li><a onClick="test('3_2_10')">유체 시각화</a></li>
+														<li><a onClick="test('3_2_11')">유체 붓기</a></li>
+														<li><a onClick="test('3_2_12')">두 Container 사이의 유체 이동</a></li>
+														<li><a onClick="test('3_2_13')">InteractionUI 목표값 설정</a></li>
+														<li><a onClick="test('3_2_14')">InteractionUI 확인 버튼 색 변경</a></li>
+													</ul>
+												</li>
+												<li>
+													<span class="opener">관찰형</span>
+													<ul>
+														<li><a onClick="test('3_3_1')">좌측 UI 생성</a></li>
+														<li><a onClick="test('3_3_2')">좌측 UI 숨김</a></li>
+														<li><a onClick="test('3_3_3')">하단 UI 생성</a></li>
+														<li><a onClick="test('3_3_4')">하단 UI 숨김</a></li>
+														<li><a onClick="test('3_3_5')">좌측 UI 버튼에 OnClick 이벤트 추가</a></li>
+														<li><a onClick="test('3_3_6')">좌측 UI 버튼에 OnClick 이벤트 제거</a></li>
+														<li><a onClick="test('3_3_7')">UI 생성</a></li>
+														<li><a onClick="test('3_3_8')">모델 생성</a></li>
+														<li><a onClick="test('3_3_9')">모델 숨김</a></li>
+														<li><a onClick="test('3_3_10')">모델 변경</a></li>
+														<li><a onClick="test('3_3_11')">모델 확대 및 축소</a></li>
+														<li><a onClick="test('3_3_12')">모델 회전</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">실험 기구 별 조작 방법 구현</span>
+											<ul>
+												<li><a onClick="test('')">비커</a></li>
+												<li><a onClick="test('')">스포이드</a></li>
+												<li><a onClick="test('')">전자 저울</a></li>
+												<li><a onClick="test('')">뷰렛</a></li>
+												<li><a onClick="test('')">삼각 플라스크</a></li>
+												<li><a onClick="test('')">스탠드</a></li>
+												<li><a onClick="test('')">거름 종이</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">클래스 설명</span>
+											<ul>
+												<li>
+													<span class="opener">수행형 / 관찰형 공통</span>
+													<ul>
+														<li>
+															<span class="opener">OpenLab.Base</span>
+															<ul>
+																<li><a onClick="test('5_1_1_1')">OpenLabBase</a></li>
+																<li><a onClick="test('5_1_1_2')">OpenLabBaseAudioData</a></li>
+																<li><a onClick="test('5_1_1_3')">OpenLabInterface</a></li>
+																<li><a onClick="test('5_1_1_4')">PlayerController</a></li>
+																<li><a onClick="test('5_1_1_5')">UICanvas</a></li>
+															</ul>
+														</li>
+														<li>
+															<span class="opener">OpenLab.Base.EnumComponents</span>
+															<ul>
+																<li><a onClick="test('5_1_2_1')">SoundTypeComponent</a></li>
+															</ul>
+														</li>
+														<li>
+															<span class="opener">OpenLab.Base.EnumTypes</span>
+															<ul>
+																<li><a onClick="test('5_1_3_1')">AnimationStatusType</a></li>
+																<li><a onClick="test('5_1_3_2')">SoundType</a></li>
+															</ul>
+														</li>
+														<li>
+															<span class="opener">OpenLab.Base.Events</span>
+															<ul>
+																<li><a onClick="test('5_1_4_1')">CustomInputModule</a></li>
+															</ul>
+														</li>
+														<li>
+															<span class="opener">OpenLab.Base.Managers</span>
+															<ul>
+																<li><a onClick="test('5_1_5_1')">FlowManager</a></li>
+																<li><a onClick="test('5_1_5_2')">ObjectPoolManager</a></li>
+																<li><a onClick="test('5_1_5_3')">UIManager</a></li>
+															</ul>
+														</li>
+														<li>
+															<span class="opener">OpenLab.Base.ObjectComponents</span>
+															<ul>
+																<li><a onClick="test('5_1_6_1')">BaseObjectComponent</a></li>
+																<li><a onClick="test('5_1_6_2')">ObjectExplainer</a></li>
+																<li><a onClick="test('5_1_6_3')">ObjectInteractor</a></li>
+																<li><a onClick="test('5_1_6_4')">ObjectMover</a></li>
+																<li><a onClick="test('5_1_6_5')">ObjectOutliner</a></li>
+																<li><a onClick="test('5_1_6_6')">ObjectResizer</a></li>
+																<li><a onClick="test('5_1_6_7')">ObjectRotator</a></li>
+															</ul>
+														</li>
+														<li>
+															<span class="opener">OpenLab.Base.Objects</span>
+															<ul>
+																<li><a onClick="test('5_1_7_1')">BaseObject</a></li>
+																<li><a onClick="test('5_1_7_2')">ClickableObject</a></li>
+																<li><a onClick="test('5_1_7_3')">ExplainableObject</a></li>
+																<li><a onClick="test('5_1_7_4')">GrabbableObject</a></li>
+																<li><a onClick="test('5_1_7_5')">InteractableObject</a></li>
+																<li><a onClick="test('5_1_7_6')">MovableObject</a></li>
+																<li><a onClick="test('5_1_7_7')">ObservableObject</a></li>
+															</ul>
+														</li>
+														<li>
+															<span class="opener">OpenLab.Base.System</span>
+															<ul>
+																<li><a onClick="test('5_1_8_1')">BaseUI</a></li>
+																<li><a onClick="test('5_1_8_2')">DashboardUI</a></li>
+																<li><a onClick="test('5_1_8_3')">InteractionMenuItem</a></li>
+																<li><a onClick="test('5_1_8_4')">InteractionMenuUI</a></li>
+																<li><a onClick="test('5_1_8_5')">LeftMenuUI</a></li>
+																<li><a onClick="test('5_1_8_6')">MessageUI</a></li>
+																<li><a onClick="test('5_1_8_7')">TooltipUI</a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<span class="opener">수행형</span>
+													<ul>
+														<li>
+															<span class="opener">Global</span>
+															<ul>
+																<li><a onClick="test('5_2_1_1')">Burette</a></li>
+																<li><a onClick="test('5_2_1_2')">CameraMoveQE</a></li>
+																<li><a onClick="test('5_2_1_3')">CameraZoom</a></li>
+																<li><a onClick="test('5_2_1_4')">CloseButton</a></li>
+																<li><a onClick="test('5_2_1_5')">Container</a></li>
+																<li><a onClick="test('5_2_1_6')">ElectronicScale</a></li>
+																<li><a onClick="test('5_2_1_7')">ExperimentalHelper</a></li>
+																<li><a onClick="test('5_2_1_8')">ExperimentalObject</a></li>
+																<li><a onClick="test('5_2_1_9')">ExperimentalObjectType</a></li>
+																<li><a onClick="test('5_2_1_10')">InteractiveContainer</a></li>
+																<li><a onClick="test('5_2_1_11')">ObjectGuide</a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<span class="opener">관찰형</span>
+													<ul>
+														<li>
+															<span class="opener">Global</span>
+															<ul>
+																<li><a onClick="test('5_3_1_1')">BottomHologramButton</a></li>
+																<li><a onClick="test('5_3_1_2')">BottomObserverUI</a></li>
+																<li><a onClick="test('5_3_1_3')">ButtonChangeModel</a></li>
+																<li><a onClick="test('5_3_1_4')">ButtonExit</a></li>
+																<li><a onClick="test('5_3_1_5')">ButtonRotate</a></li>
+																<li><a onClick="test('5_3_1_6')">ButtonShowAngle</a></li>
+																<li><a onClick="test('5_3_1_7')">CloseButton</a></li>
+																<li><a onClick="test('5_3_1_8')">CustomAudioPlayer</a></li>
+																<li><a onClick="test('5_3_1_9')">ExperimentalHelper</a></li>
+																<li><a onClick="test('5_3_1_10')">ExperimentalObject</a></li>
+																<li><a onClick="test('5_3_1_11')">ExperimentalObjectType</a></li>
+																<li><a onClick="test('5_3_1_12')">LeftHologramButton</a></li>
+																<li><a onClick="test('5_3_1_13')">LeftObserverUI</a></li>
+																<li><a onClick="test('5_3_1_14')">ObjectGuideUI</a></li>
+																<li><a onClick="test('5_3_1_15')">ResizableObject</a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">리소스 관리</span>
+											<ul>
+												<li>
+													<span class="opener">수행형 / 관찰형 공통</span>
+													<ul>
+														<li><a onClick="test('')">새 에피소드 프로젝트 생성</a></li>
+														<li><a onClick="test('')">초기 프로젝트의 구성</a></li>
+														<li><a onClick="test('')">실험의 순서 및 단계 관리</a></li>
+														<li><a onClick="test('')">Import 되어 있는 패키지 리스트</a></li>
+														<li><a onClick="test('')">UI 디자인</a></li>
+														<li><a onClick="test('')">모든 조작 가능한 오브젝트의 Layer</a></li>
+														<li><a onClick="test('')">네이밍 컨벤션</a></li>
+													</ul>
+												</li>
+												<li>
+													<span class="opener">수행형</span>
+													<ul>
+														<li><a onClick="test('')">실험 기구의 배치</a></li>
+														<li><a onClick="test('')">실험 기구 3D 모델 에셋</a></li>
+														<li><a onClick="test('')">실험 기구의 조작</a></li>
+													</ul>
+												</li>
+												<li>
+													<span class="opener">관찰형</span>
+													<ul>
+														<li><a onClick="test('')">유저의 위치</a></li>
+														<li><a onClick="test('')">모델의 배치</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">에피소드별 소개</span>
+											<ul>
+												<li>
+													<span class="opener">수행형 / 관찰형 공통</span>
+													<ul>
+														<li><a onClick="test('')">새 에피소드 프로젝트 생성</a></li>
+														<li><a onClick="test('')">초기 프로젝트의 구성</a></li>
+														<li><a onClick="test('')">실험의 순서 및 단계 관리</a></li>
+														<li><a onClick="test('')">Import 되어 있는 패키지 리스트</a></li>
+														<li><a onClick="test('')">UI 디자인</a></li>
+														<li><a onClick="test('')">모든 조작 가능한 오브젝트의 Layer</a></li>
+														<li><a onClick="test('')">네이밍 컨벤션</a></li>
+													</ul>
+												</li>
+												<li>
+													<span class="opener">수행형</span>
+													<ul>
+														<li><a onClick="test('')">실험 기구의 배치</a></li>
+														<li><a onClick="test('')">실험 기구 3D 모델 에셋</a></li>
+														<li><a onClick="test('')">실험 기구의 조작</a></li>
+													</ul>
+												</li>
+												<li>
+													<span class="opener">관찰형</span>
+													<ul>
+														<li><a onClick="test('')">유저의 위치</a></li>
+														<li><a onClick="test('')">모델의 배치</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+
+							<!-- Footer
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+							-->
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="C:\YJSProjects\OpenLabGuide\assets\js\jquery.min.js"></script>
+			<script src="C:\YJSProjects\OpenLabGuide\assets\js\browser.min.js"></script>
+			<script src="C:\YJSProjects\OpenLabGuide\assets\js\breakpoints.min.js"></script>
+			<script src="C:\YJSProjects\OpenLabGuide\assets\js\util.js"></script>
+			<script src="C:\YJSProjects\OpenLabGuide\assets\js\main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="C:\YJSProjects\OpenLabGuide\assets\css\main.css" />
+</head>
+
+<body>
+	<div class="content">
+		<header>
+			<h1>OpenLabBase</h1>
+		</header>
+		<table>
+			<thead>
+				<tr>
+					<th>Variables</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>private GameObject _cachedGameObject</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>private Transform _cachedTransform</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>private AnimationStatusType _status</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public UnityEvent OnInitializeEvent</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public UnityEvent OnReleaseEvent</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public UnityEvent OnDisappearingEvent</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public GameObject GameObject</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public Transform Transform</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public Vector3 Position</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public Vector3 LocalPosition</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public Quaternion Rotation</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public Quaternion LocalRotation</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public Vector3 LocalScale</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public Transform Parent</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public AnimationStatusType Status =&gt; _status</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Tweener callback;</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Functions</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>public virtual void OnInitialize()</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public virtual void OnRelease()</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public virtual void Show()</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>protected virtual Tweener PlayerShowAnimation()</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public virtual void Hide(UnityAction onComplete = null)</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>protected virtual Tweener PlayHideAnimation()</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>private IEnumerator ProcessInput(KeyCode key, UnityAction call)</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public void TriggerUnityEvent(string name)</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public void Release()</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public void SetLayersRecursively(Transform transform, string layerName)</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public Transform FindChildRecursively(Transform transform, string name)</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public void AddReleaseEvent(KeyCode key, UnityAction call)</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public void SetActive(bool value)</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public void SetPosition(Vector3 position, bool isLocal = false, Transform parent = null)</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>public void SetDefault()</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<!-- Scripts -->
+	<script src="C:\YJSProjects\OpenLabGuide\assets\js\jquery.min.js"></script>
+	<script src="C:\YJSProjects\OpenLabGuide\assets\js\browser.min.js"></script>
+	<script src="C:\YJSProjects\OpenLabGuide\assets\js\breakpoints.min.js"></script>
+	<script src="C:\YJSProjects\OpenLabGuide\assets\js\util.js"></script>
+	<script src="C:\YJSProjects\OpenLabGuide\assets\js\main.js"></script>
+</body>
+
+</html>

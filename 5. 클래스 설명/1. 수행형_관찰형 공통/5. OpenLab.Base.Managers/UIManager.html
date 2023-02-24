@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="C:\YJSProjects\OpenLabGuide\assets\css\main.css" />
+	</head>
+	<body>
+		<div class="content">
+			<header>
+				<h1>UIManager</h1>
+			</header>
+			<table>
+				<thead>
+					<tr>
+						<th>Variables</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>private Camera _uiCamera</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>private RectTransform _masterCanvas</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>private StateMachine _stateMachine</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>private BaseUI _lastPoppedObject</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>private readonly Stack&lt;BaseUI&gt; _uiHistory</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>private readonly Dictionary&lt;string, object&gt;</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>public Camera UICamera =&gt; _uiCamera</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>public RectTransform MasterCanvas =&gt; _masterCanvas</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>public static UIManager Instance</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Functions</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>private void Reset()</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>private void Awake()</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>public BaseUI Push(string prefabName)</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>public void Pop()</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>public BaseUI Peek()</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>public void TriggerUnityEvent(string name)</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>public void setVariable(string name, object value)</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>public object GetVariable(string name)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- Scripts -->
+		<script src="C:\YJSProjects\OpenLabGuide\assets\js\jquery.min.js"></script>
+		<script src="C:\YJSProjects\OpenLabGuide\assets\js\browser.min.js"></script>
+		<script src="C:\YJSProjects\OpenLabGuide\assets\js\breakpoints.min.js"></script>
+		<script src="C:\YJSProjects\OpenLabGuide\assets\js\util.js"></script>
+		<script src="C:\YJSProjects\OpenLabGuide\assets\js\main.js"></script>
+	</body>
+</html>
