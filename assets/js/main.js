@@ -420,19 +420,20 @@ function test(string) {
 	eval("element.innerHTML = " + "string" + string);
 }
 
-function readTextFile(file)
-{
+function readTextFile(file) {
     var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                var allText = rawFile.responseText;
+    var allText;
+    rawFile.open("GET", file);
+    // rawFile.responseType = "text";
+    rawFile.onload = () => {
+        if (rawFile.readyState === rawFile.DONE) {
+            if (rawFile.status === 200 || rawFile.status == 0) {
+                allText = rawFile.responseText;
+                const element = document.getElementById('content');
+                element.innerHTML = allText;
                 console.log(allText);
             }
         }
     }
+    rawFile.send(null);
 }
