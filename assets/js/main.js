@@ -322,7 +322,6 @@ function readHtmlFile(file) {
                 allText = rawFile.responseText;
                 const element = document.getElementById('content');
                 element.innerHTML = allText;
-                console.log(allText);
             }
         }
     }
