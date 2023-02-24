@@ -1,177 +1,154 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title></title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href=".\assets\css\main.css" />
-	</head>
-	<body>
-		<div class="content">
-			<header>
-				<h1>ExperimentalHelper</h1>
-			</header>
-			<table>
-				<thead>
-					<tr>
-						<th>Variables</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>private ExperimentalObject[] _objects</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private GameObject _playerCamera</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private LeftObserverUI _leftObsererUI</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private BottomObserverUI _bottomObserverUI</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private Transform _diffusionPlaneModelNumber</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private Transform _diffusionPlaneModelType</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private Transform _diffusionPlaneBackgroundWall</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private float _tweenTime</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private string _currentModel</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private bool _rotatable</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private bool _isFirst</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private bool[] _isDone</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private int _modelType</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private Dictionary&lt;ObjectType, ExperimentalObject&gt; _objectMap</td>
-					</tr>
-				</tbody>
-			</table>
+<header>
+	<h1>ExperimentalHelper</h1>
+</header>
+<table>
+	<thead>
+		<tr>
+			<th>Variables</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>private ExperimentalObject[] _objects</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private GameObject _playerCamera</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private LeftObserverUI _leftObsererUI</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private BottomObserverUI _bottomObserverUI</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private Transform _diffusionPlaneModelNumber</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private Transform _diffusionPlaneModelType</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private Transform _diffusionPlaneBackgroundWall</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private float _tweenTime</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private string _currentModel</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private bool _rotatable</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private bool _isFirst</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private bool[] _isDone</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private int _modelType</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private Dictionary&lt;ObjectType, ExperimentalObject&gt; _objectMap</td>
+		</tr>
+	</tbody>
+</table>
 
-			<table>
-				<thead>
-					<tr>
-						<th>Functions</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>private void Start()</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public ExperimentalObject GetExpObj(ObjectType type)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void ChangeCamera(bool isLocked, bool isRaycasterLocked)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void RemoveChild(GameObject obj)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void ShowBackgroundWall()</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void HideBackgroundWall()</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void SetModelActive(bool active)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void MoveModel(int position, string currentModel = &quot;&quot;)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void MoveDiffusionPlane(int position)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void ChangeModelType()</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void ChangeModel(string path)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void LoadModel</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void ChangeModelRotatable()</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void ModelSizeUp()</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void ModelSizeDown()</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void SetLeftObserverUIActive(bool active)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>pulbic void SetBottomObserverUIActive(bool active)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void ShowModelAngle()</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public bool CheckDone()</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-
-		<!-- Scripts -->
-		<script src=".\assets\js\jquery.min.js"></script>
-		<script src=".\assets\js\browser.min.js"></script>
-		<script src=".\assets\js\breakpoints.min.js"></script>
-		<script src=".\assets\js\util.js"></script>
-		<script src=".\assets\js\main.js"></script>
-	</body>
-</html>
+<table>
+	<thead>
+		<tr>
+			<th>Functions</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>private void Start()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public ExperimentalObject GetExpObj(ObjectType type)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void ChangeCamera(bool isLocked, bool isRaycasterLocked)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void RemoveChild(GameObject obj)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void ShowBackgroundWall()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void HideBackgroundWall()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void SetModelActive(bool active)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void MoveModel(int position, string currentModel = &quot;&quot;)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void MoveDiffusionPlane(int position)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void ChangeModelType()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void ChangeModel(string path)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void LoadModel</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void ChangeModelRotatable()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void ModelSizeUp()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void ModelSizeDown()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void SetLeftObserverUIActive(bool active)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>pulbic void SetBottomObserverUIActive(bool active)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void ShowModelAngle()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public bool CheckDone()</td>
+		</tr>
+	</tbody>
+</table>

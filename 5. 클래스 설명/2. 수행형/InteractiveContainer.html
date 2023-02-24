@@ -1,105 +1,82 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title></title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href=".\assets\css\main.css" />
-	</head>
-	<body>
-		<div class="content">
-			<header>
-				<h1>InteractiveContainer</h1>
-			</header>
-			<table>
-				<thead>
-					<tr>
-						<th>Variables</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>private TextMeshProUGUI _text</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private Canvas _canvas</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private Button _buttonUp, _buttonDown, _buttonOK</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private float _targetValue</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public string _unit</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public float _unitScale</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private bool _isUIActive</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private EventTrigger _trigger</td>
-					</tr>
-				</tbody>
-			</table>
+<header>
+	<h1>InteractiveContainer</h1>
+</header>
+<table>
+	<thead>
+		<tr>
+			<th>Variables</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>private TextMeshProUGUI _text</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private Canvas _canvas</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private Button _buttonUp, _buttonDown, _buttonOK</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private float _targetValue</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public string _unit</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public float _unitScale</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private bool _isUIActive</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private EventTrigger _trigger</td>
+		</tr>
+	</tbody>
+</table>
 
-			<table>
-				<thead>
-					<tr>
-						<th>Functions</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>new private void Start()</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private void OnScroll(PointerEventDate data)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>new private void AddFluid(float amount, float time)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>new private void RemoveFluid(float amount, float time)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void CheckAmount()</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void SetTargetValue(float target)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void SetUIActive(bool active)</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-
-		<!-- Scripts -->
-		<script src=".\assets\js\jquery.min.js"></script>
-		<script src=".\assets\js\browser.min.js"></script>
-		<script src=".\assets\js\breakpoints.min.js"></script>
-		<script src=".\assets\js\util.js"></script>
-		<script src=".\assets\js\main.js"></script>
-	</body>
-</html>
+<table>
+	<thead>
+		<tr>
+			<th>Functions</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>new private void Start()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private void OnScroll(PointerEventDate data)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>new private void AddFluid(float amount, float time)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>new private void RemoveFluid(float amount, float time)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void CheckAmount()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void SetTargetValue(float target)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void SetUIActive(bool active)</td>
+		</tr>
+	</tbody>
+</table>

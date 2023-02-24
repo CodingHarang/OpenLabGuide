@@ -1,125 +1,102 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title></title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href=".\assets\css\main.css" />
-	</head>
-	<body>
-		<div class="content">
-			<header>
-				<h1>GrabbableObject</h1>
-			</header>
-			<table>
-				<thead>
-					<tr>
-						<th>Variables</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>private Collider[] _colliders</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>protected BaseObject _targetObject</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>protected bool _isPointingTarget</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>protected readonly List&lt;Entry&gt; _entries</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public UnityEvent OnPointerDownEvent</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public UnityEvent OnSuccessDragEvent</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public UnityEvent OnFailDragEvent</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public UnityEvent OnPointerEnterEvent</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public UnityEvent OnPointerExitEvent</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public BaseObject TargetObject =&gt; _targetObject</td>
-					</tr>
-				</tbody>
-			</table>
+<header>
+	<h1>GrabbableObject</h1>
+</header>
+<table>
+	<thead>
+		<tr>
+			<th>Variables</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>private Collider[] _colliders</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>protected BaseObject _targetObject</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>protected bool _isPointingTarget</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>protected readonly List&lt;Entry&gt; _entries</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public UnityEvent OnPointerDownEvent</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public UnityEvent OnSuccessDragEvent</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public UnityEvent OnFailDragEvent</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public UnityEvent OnPointerEnterEvent</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public UnityEvent OnPointerExitEvent</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public BaseObject TargetObject =&gt; _targetObject</td>
+		</tr>
+	</tbody>
+</table>
 
-			<table>
-				<thead>
-					<tr>
-						<th>Functions</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>public override void SetColliderActive(bool value)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public override void OnInitialize()</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public override void OnRelease()</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>protected override Start()</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void SetTarget(BaseObject target)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private Entry AddEventListener(EventTrigger trigger, EventTriggerType type, UnityAction&lt;BaseEventData&gt; call)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private void OnPointerExit(BaseEventData eventData)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private void OnPointerEnter(BaseEventData eventData)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>protected virtual void OnPointerUp(BaseEventData eventData)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>protected virtual void OnPointerDown(BaseEventData eventData)</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-
-		<!-- Scripts -->
-		<script src=".\assets\js\jquery.min.js"></script>
-		<script src=".\assets\js\browser.min.js"></script>
-		<script src=".\assets\js\breakpoints.min.js"></script>
-		<script src=".\assets\js\util.js"></script>
-		<script src=".\assets\js\main.js"></script>
-	</body>
-</html>
+<table>
+	<thead>
+		<tr>
+			<th>Functions</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>public override void SetColliderActive(bool value)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public override void OnInitialize()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public override void OnRelease()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>protected override Start()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void SetTarget(BaseObject target)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private Entry AddEventListener(EventTrigger trigger, EventTriggerType type, UnityAction&lt;BaseEventData&gt; call)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private void OnPointerExit(BaseEventData eventData)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private void OnPointerEnter(BaseEventData eventData)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>protected virtual void OnPointerUp(BaseEventData eventData)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>protected virtual void OnPointerDown(BaseEventData eventData)</td>
+		</tr>
+	</tbody>
+</table>

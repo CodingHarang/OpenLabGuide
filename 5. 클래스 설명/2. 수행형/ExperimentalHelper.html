@@ -1,133 +1,116 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title></title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href=".\assets\css\main.css" />
-	</head>
-	<body>
-		<div class="content">
-			<header>
-				<h1>ExperimentalHelper</h1>
-			</header>
-			<table>
-				<thead>
-					<tr>
-						<th>Variables</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>private ExperimentalObject[] _objects</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private Dictionary&lt;ObjectType, ExperimentalObject&gt; _objectMap</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private UnityAction OnPointerDownEvent</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private UnityAction OnFailDragEvent</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public static ExperimentalHelper Instance</td>
-					</tr>
-				</tbody>
-			</table>
+<header>
+	<h1>ExperimentalHelper</h1>
+</header>
+<table>
+	<thead>
+		<tr>
+			<th>Variables</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>private ExperimentalObject[] _objects</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private Dictionary&lt;ObjectType, ExperimentalObject&gt; _objectMap</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private UnityAction OnPointerDownEvent</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private UnityAction OnFailDragEvent</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public static ExperimentalHelper Instance</td>
+		</tr>
+	</tbody>
+</table>
 
-			<table>
-				<thead>
-					<tr>
-						<th>Functions</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>private void Awake()</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private void Reset()</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private void Start()</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private void PlayRotating(Transform transform, Vector3 vector3, float duration, bool isLocal, bool setRelative)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private void PlayMoving(Transform transform, Vector3 vector3, float duration, bool isLocal, bool setRelative)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>private void OnSuccessDrag(ExperimentalObject expObj)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public ExperimentalObject GetExpObj(ObjectType type)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void AddListener(ObjectType current, ObjectType target, Vector3 targetPosition, Vector3 targetRotation)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void RemoveListener(ObjectType current)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void ShowSilhouette(ObjectType currentObject, Vector3 targetPosition, Vector3 targetRotation</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void HideSilhouette(ObjectType currentObject)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void SetGuideStatus(ObjectType type, bool setHighlight)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void SetPositionAndRotation(ObjectType current, ObjectType target = ObjectType.None, Vector3 positionOffset = default, Vector3 rotationOffset = default</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public Vector3 GetPositionP(ObjectType type)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void MoveAndRotate(ObjectType type, Vector3 pos, float duration, bool posLocal, bool posRelative, Vector3 ang, bool angLocal, bool angRelative</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void SetGuideAddListener(ObjectType current, ObjectType target, Vector3 position, Vector3 rotation)</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>public void EndGuideRemoveListener(ObjectType current, ObjectType target)</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-
-		<!-- Scripts -->
-		<script src=".\assets\js\jquery.min.js"></script>
-		<script src=".\assets\js\browser.min.js"></script>
-		<script src=".\assets\js\breakpoints.min.js"></script>
-		<script src=".\assets\js\util.js"></script>
-		<script src=".\assets\js\main.js"></script>
-	</body>
-</html>
+<table>
+	<thead>
+		<tr>
+			<th>Functions</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>private void Awake()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private void Reset()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private void Start()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private void PlayRotating(Transform transform, Vector3 vector3, float duration, bool isLocal, bool
+				setRelative)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private void PlayMoving(Transform transform, Vector3 vector3, float duration, bool isLocal, bool
+				setRelative)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private void OnSuccessDrag(ExperimentalObject expObj)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public ExperimentalObject GetExpObj(ObjectType type)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void AddListener(ObjectType current, ObjectType target, Vector3 targetPosition, Vector3
+				targetRotation)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void RemoveListener(ObjectType current)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void ShowSilhouette(ObjectType currentObject, Vector3 targetPosition, Vector3 targetRotation</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void HideSilhouette(ObjectType currentObject)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void SetGuideStatus(ObjectType type, bool setHighlight)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void SetPositionAndRotation(ObjectType current, ObjectType target = ObjectType.None, Vector3
+				positionOffset = default, Vector3 rotationOffset = default</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public Vector3 GetPositionP(ObjectType type)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void MoveAndRotate(ObjectType type, Vector3 pos, float duration, bool posLocal, bool posRelative,
+				Vector3 ang, bool angLocal, bool angRelative</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void SetGuideAddListener(ObjectType current, ObjectType target, Vector3 position, Vector3
+				rotation)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void EndGuideRemoveListener(ObjectType current, ObjectType target)</td>
+		</tr>
+	</tbody>
+</table>
