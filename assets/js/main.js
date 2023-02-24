@@ -417,7 +417,7 @@ const string5_3_1_15 = "<header><h1>ResizableObject</h1></header><table><thead><
 function test(string) {
 	const element = document.getElementById('content');
 	let fr = new FileReader();
-        fr.readAsText("/test.html", "utf-8");
+        fr.readAsText("test.html", "utf-8");
 
         fr.onload = () => {
             parseText(fr.result);
