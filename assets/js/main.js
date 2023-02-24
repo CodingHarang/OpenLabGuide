@@ -305,12 +305,6 @@
 		
 	})(jQuery);
 
-function test(string) {
-	const element = document.getElementById('content');
-	
-	eval("element.innerHTML = " + "string" + string);
-}
-
 function readHtmlFile(file) {
     var rawFile = new XMLHttpRequest();
     var allText;
