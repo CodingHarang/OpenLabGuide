@@ -416,14 +416,29 @@ const string5_3_1_15 = "<header><h1>ResizableObject</h1></header><table><thead><
 // const string = "";
 function test(string) {
 	const element = document.getElementById('content');
-	let fr = new FileReader();
-        fr.readAsText("test.html", "utf-8");
-
-        fr.onload = () => {
-            parseText(fr.result);
-        }
+	
 	eval("element.innerHTML = " + "string" + string);
 }
+
+function readTextFile(file)
+{
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                alert(allText);
+            }
+        }
+    }
+    rawFile.send(null);
+}
+
+readTextFile("test.html");
 
 function parseText(text) {
 	console.log(text)
