@@ -243,7 +243,6 @@
 
 		// Openers.
 			$menu_openers_1.each(function() {
-				console.log('opener_1');
 				var $this = $(this);
 
 				$this.on('click', function(event) {
@@ -265,7 +264,6 @@
 			});
 
 			$menu_openers_2.each(function() {
-				console.log('opener_2');
 				var $this = $(this);
 
 				$this.on('click', function(event) {
@@ -286,7 +284,6 @@
 			});
 
 			$menu_openers_3.each(function() {
-				console.log('opener_2');
 				var $this = $(this);
 
 				$this.on('click', function(event) {
