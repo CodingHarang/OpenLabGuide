@@ -437,10 +437,3 @@ function readTextFile(file)
     }
     rawFile.send(null);
 }
-
-readTextFile("test.html");
-
-function parseText(text) {
-	console.log(text)
-	// 여기서 파일 가공하면됨
-}
