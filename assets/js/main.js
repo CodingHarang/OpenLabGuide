@@ -422,6 +422,7 @@ function test(string) {
 
 function readTextFile(file) {
     var rawFile = new XMLHttpRequest();
+	console.log(file);
     var allText;
     rawFile.open("GET", file);
     // rawFile.responseType = "text";
