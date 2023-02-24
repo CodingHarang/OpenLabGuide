@@ -1,113 +1,86 @@
-<!DOCTYPE HTML>
-<html>
+<header>
+	<h1>PlayerController</h1>
+</header>
+<table>
+	<thead>
+		<tr>
+			<th>Variables</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>private CharacterController _controller</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private PhysicsRayCaster _raycaster</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private CustomInputModule _eventSystem</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private FollowingCamera _followingCamera</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private GameObject _hud</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private float _speed</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private bool _isLocked</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private bool _isRaycasterLocked</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public static PlayerController Instance</td>
+		</tr>
+	</tbody>
+</table>
 
-<head>
-	<title></title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap"
-		rel="stylesheet">
-		<link rel="stylesheet" href=".\assets\css\main.css" />
-</head>
-
-<body>
-	<div class="content">
-		<header>
-			<h1>PlayerController</h1>
-		</header>
-		<table>
-			<thead>
-				<tr>
-					<th>Variables</th>
-					<th></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>private CharacterController _controller</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>private PhysicsRayCaster _raycaster</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>private CustomInputModule _eventSystem</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>private FollowingCamera _followingCamera</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>private GameObject _hud</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>private float _speed</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>private bool _isLocked</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>private bool _isRaycasterLocked</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>public static PlayerController Instance</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<table>
-			<thead>
-				<tr>
-					<th>Functions</th>
-					<th></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>private void Awake()</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>private void Reset()</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>private void Update()</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>private void MovePlayer()</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>private void RotateCamera()</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>public void LockController(bool isLocked, bool isRaycasterLocked)</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>public void SetTarget(Transform target, Vector3 offset = default, Vector3 dir = default)</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-
-	<!-- Scripts -->
-	<script src=".\assets\js\jquery.min.js"></script>
-	<script src=".\assets\js\browser.min.js"></script>
-	<script src=".\assets\js\breakpoints.min.js"></script>
-	<script src=".\assets\js\util.js"></script>
-	<script src=".\assets\js\main.js"></script>
-</body>
-
-</html>
+<table>
+	<thead>
+		<tr>
+			<th>Functions</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>private void Awake()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private void Reset()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private void Update()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private void MovePlayer()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>private void RotateCamera()</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void LockController(bool isLocked, bool isRaycasterLocked)</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>public void SetTarget(Transform target, Vector3 offset = default, Vector3 dir = default)</td>
+		</tr>
+	</tbody>
+</table>
