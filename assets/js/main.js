@@ -419,5 +419,16 @@ const string5_3_1_15 = "<header><h1>ResizableObject</h1></header><table><thead><
 // const string = "";
 function test(string) {
 	const element = document.getElementById('content');
+	let fr = new FileReader();
+        fr.readAsText("/test.html", "utf-8");
+
+        fr.onload = () => {
+            parseText(fr.result);
+        }
 	eval("element.innerHTML = " + "string" + string);
+}
+
+function parseText(text) {
+	console.log(text)
+	// 여기서 파일 가공하면됨
 }
